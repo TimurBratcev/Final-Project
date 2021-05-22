@@ -1,0 +1,129 @@
+.dws-menu[type="checkbox"]{
+    display: none;
+}
+.dws-menu label.toggle-menu .fa{
+    position: absolute;
+}
+.toggle-menu{
+    text-transform: uppercase;
+    font-size: 30px;
+    display: none;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.submenu-list a{
+    display: none;
+}
+#home-link{
+    display: none;
+}
+#menu-link1{
+    display: none;
+}
+#menu-link2{
+    display: none;
+}
+@media all and (max-width: 975px){
+    .dws-menu{
+        overflow: hidden;
+        display: block;
+    }
+    .dws-menu ul{
+        display: none;
+    }
+    #menu-link1{
+        display: flex;
+    }
+    #menu-link2{
+        display: flex;
+    }
+    #home-link{
+        display: block;
+    }
+    .dws-menu label.toggle-menu{
+        display: block;
+        justify-self: flex-start;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+    .header{
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+    nav{
+        width: 100%;
+    }
+    .toggle-menu{
+        width: 100%;
+    }
+    input.toggle-menu:checked + label.toggle-menu{
+        background: #212121;
+        color: white;
+    }
+    .toggle-menu:checked ~ .list{ 
+        background: #212121;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0%;
+        padding: 5px;
+        height: auto;
+    }
+    .logo{
+        display: none;
+    }
+    .header-link{
+        color:white;
+    }
+    .header-link:hover{
+        background: none;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .dropbtn{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
+    .show{
+        display: none;
+    }
+    .block2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-block{
+        flex-direction: column;
+    }
+}
+@media all and (max-width:1200px){
+    .block2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-block{
+        flex-direction: column;
+    }
+    .slide{
+        flex-direction: column;
+    }
+    .slide-part1{
+        justify-content: center;
+        align-items: center;
+    }
+    .block1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block1-part-img{
+        align-self: center;
+    }
+}
